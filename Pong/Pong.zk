@@ -12,9 +12,9 @@ var ColorGreen = sfml.Color(0,255,0)
 
 class Button
 {
-  private var rect = nil
-  private var font = nil
-  private var text = nil
+  var rect = nil
+  var font = nil
+  var text = nil
 
   function __construct__()
   {
@@ -64,9 +64,9 @@ class Button
 }
 class PongMenu
 {
-  private var buttons = nil
-  private var t = nil
-  private var sprite = nil
+  var buttons = nil
+  var t = nil
+  var sprite = nil
   function __construct__()
   {
     self.t = sfml.Texture()
@@ -138,7 +138,7 @@ class PongMenu
 }
 class Bat
 {
-  private var rect = nil
+  var rect = nil
   function __construct__()
   {
     self.rect = sfml. Rectangle(0.0,0.0)
@@ -175,7 +175,7 @@ class Bat
 
 class Ball
 {
-  private var rect = nil
+  var rect = nil
   var velX = nil
   var velY = nil
   function __construct__()
@@ -223,23 +223,23 @@ class Ball
 
 class PongGame
 {
-  private var window = nil
-  private var lines = nil
-  private var f = nil
-  private var daScore =  nil
-  private var winnerText = nil
-  private var bat1 = nil
-  private var bat2 = nil
-  private var ball = nil
-  private var menu = nil
-  private var gameState = nil
-  private var score1 = 0
-  private var score2 = 0
-  private var vsComputer = true
-  private var difficulty = 1
-  private var maxScore = 0
-  private var hit = true
-  private var counter = 0
+  var window = nil
+  var lines = nil
+  var f = nil
+  var daScore =  nil
+  var winnerText = nil
+  var bat1 = nil
+  var bat2 = nil
+  var ball = nil
+  var menu = nil
+  var gameState = nil
+  var score1 = 0
+  var score2 = 0
+  var vsComputer = true
+  var difficulty = 1
+  var maxScore = 0
+  var hit = true
+  var counter = 0
 
   var isRunning = false
   function __construct__(var maxS)
