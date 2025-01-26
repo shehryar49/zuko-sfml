@@ -1,5 +1,5 @@
-#ifndef PLTSFML_H_
-#define PLTSFML_H_
+#ifndef ZUKO_SFML_H_
+#define ZUKO_SFML_H_
 #ifdef _WIN32
   #include "C:\\zuko\\include\\zapi.h"
   #define EXPORT __declspec(dllexport)
@@ -10,75 +10,75 @@
 
 extern "C"
 {
-    EXPORT ZObject init();
-    EXPORT ZObject getMousePosition(ZObject*, int);
+    EXPORT zobject init();
+    EXPORT zobject getMousePosition(zobject*, int);
 
     //RenderWindow methods
-    EXPORT ZObject RenderWindow__construct(ZObject*, int);
-    EXPORT ZObject RenderWindow__draw(ZObject*, int);
-    EXPORT ZObject RenderWindow__clear(ZObject*, int);
-    EXPORT ZObject RenderWindow__display(ZObject*, int);
-    EXPORT ZObject RenderWindow__pollevent(ZObject*, int);
-    EXPORT ZObject RenderWindow__setFrameRateLimit(ZObject*, int);
-    EXPORT ZObject RenderWindow__close(ZObject*, int);
+    EXPORT zobject RenderWindow__construct(zobject*, int);
+    EXPORT zobject RenderWindow__draw(zobject*, int);
+    EXPORT zobject RenderWindow__clear(zobject*, int);
+    EXPORT zobject RenderWindow__display(zobject*, int);
+    EXPORT zobject RenderWindow__pollevent(zobject*, int);
+    EXPORT zobject RenderWindow__setFrameRateLimit(zobject*, int);
+    EXPORT zobject RenderWindow__close(zobject*, int);
 
     //Circle Methods
-    EXPORT ZObject Circle__construct(ZObject*, int);
-    EXPORT ZObject Circle__setpointcount(ZObject*, int);
-    EXPORT ZObject Circle__setfillcolor(ZObject*, int);
-    EXPORT ZObject  Circle__setpos(ZObject*, int);
-    EXPORT ZObject Circle__del(ZObject*, int);
+    EXPORT zobject Circle__construct(zobject*, int);
+    EXPORT zobject Circle__setpointcount(zobject*, int);
+    EXPORT zobject Circle__setfillcolor(zobject*, int);
+    EXPORT zobject  Circle__setpos(zobject*, int);
+    EXPORT zobject Circle__del(zobject*, int);
     //Color methods
-    EXPORT ZObject  Color__construct(ZObject*, int);
-    EXPORT ZObject Color__del(ZObject*, int);
+    EXPORT zobject  Color__construct(zobject*, int);
+    EXPORT zobject Color__del(zobject*, int);
     //Rectangle Methods
-    EXPORT ZObject  Rect__construct(ZObject*, int);
-    EXPORT ZObject  Rect__setfillcolor(ZObject*, int);
-    EXPORT ZObject  Rect__setOutlineColor(ZObject*, int);
-    EXPORT ZObject  Rect__setOutlineThickness(ZObject*, int);
-    EXPORT ZObject  Rect__setpos(ZObject*, int);
-    EXPORT ZObject Rect__getPosition(ZObject*, int);
-    EXPORT ZObject Rect__getGlobalBounds(ZObject*, int);
-    EXPORT ZObject  Rect__setSize(ZObject*, int);
-    EXPORT ZObject  Rect__del(ZObject*, int);
+    EXPORT zobject  Rect__construct(zobject*, int);
+    EXPORT zobject  Rect__setfillcolor(zobject*, int);
+    EXPORT zobject  Rect__setOutlineColor(zobject*, int);
+    EXPORT zobject  Rect__setOutlineThickness(zobject*, int);
+    EXPORT zobject  Rect__setpos(zobject*, int);
+    EXPORT zobject Rect__getPosition(zobject*, int);
+    EXPORT zobject Rect__getGlobalBounds(zobject*, int);
+    EXPORT zobject  Rect__setSize(zobject*, int);
+    EXPORT zobject  Rect__del(zobject*, int);
     //Event Methods
-    EXPORT ZObject  Event__construct(ZObject*, int);
-    EXPORT ZObject  Event__del(ZObject*, int);
+    EXPORT zobject  Event__construct(zobject*, int);
+    EXPORT zobject  Event__del(zobject*, int);
     //Texture Methods
-    EXPORT ZObject  Texture__construct(ZObject*, int);
-    EXPORT ZObject  Texture__loadFromFile(ZObject*, int);
-    EXPORT ZObject  Texture__del(ZObject*, int);
+    EXPORT zobject  Texture__construct(zobject*, int);
+    EXPORT zobject  Texture__loadFromFile(zobject*, int);
+    EXPORT zobject  Texture__del(zobject*, int);
     //Sprite Methods
-    EXPORT ZObject  Sprite__construct(ZObject*, int);
-    EXPORT ZObject  Sprite__setTexture(ZObject*, int);
-    EXPORT ZObject  Sprite__del(ZObject*, int);
+    EXPORT zobject  Sprite__construct(zobject*, int);
+    EXPORT zobject  Sprite__setTexture(zobject*, int);
+    EXPORT zobject  Sprite__del(zobject*, int);
     //Clock Methods
-    EXPORT ZObject  Clock__construct(ZObject*, int);
-    EXPORT ZObject  Clock__restart(ZObject*, int);
-    EXPORT ZObject  Clock__del(ZObject*, int);
+    EXPORT zobject  Clock__construct(zobject*, int);
+    EXPORT zobject  Clock__restart(zobject*, int);
+    EXPORT zobject  Clock__del(zobject*, int);
     //Time Methods
-    EXPORT ZObject Time__asSeconds(ZObject*, int);
-    EXPORT ZObject Time__del(ZObject*, int);
+    EXPORT zobject Time__asSeconds(zobject*, int);
+    EXPORT zobject Time__del(zobject*, int);
     //VertexArray Methods
-    EXPORT ZObject  VertexArray__construct(ZObject*, int);
-    EXPORT ZObject  VertexArray__setKth(ZObject*, int);
-    EXPORT ZObject  VertexArray__resize(ZObject*, int);
-    EXPORT ZObject  VertexArray__setPrimType(ZObject*, int);
-    EXPORT ZObject  VertexArray__del(ZObject*, int);
+    EXPORT zobject  VertexArray__construct(zobject*, int);
+    EXPORT zobject  VertexArray__setKth(zobject*, int);
+    EXPORT zobject  VertexArray__resize(zobject*, int);
+    EXPORT zobject  VertexArray__setPrimType(zobject*, int);
+    EXPORT zobject  VertexArray__del(zobject*, int);
     //Font Methods
-    EXPORT ZObject  Font__construct(ZObject*, int);
-    EXPORT ZObject  Font__loadFromFile(ZObject*, int);
-    EXPORT ZObject  Font__del(ZObject*, int);
+    EXPORT zobject  Font__construct(zobject*, int);
+    EXPORT zobject  Font__loadFromFile(zobject*, int);
+    EXPORT zobject  Font__del(zobject*, int);
     //Text Methods
-    EXPORT ZObject  Text__construct(ZObject*, int);
-    EXPORT ZObject  Text__setString(ZObject*, int);
-    EXPORT ZObject  Text__setPostion(ZObject*, int);
-    EXPORT ZObject  Text__setCharacterSize(ZObject*, int);
-    EXPORT ZObject  Text__setFont(ZObject*, int);
-    EXPORT ZObject  Text__setFillColor(ZObject*, int);
-    EXPORT ZObject  Text__del(ZObject*, int);
+    EXPORT zobject  Text__construct(zobject*, int);
+    EXPORT zobject  Text__setString(zobject*, int);
+    EXPORT zobject  Text__setPostion(zobject*, int);
+    EXPORT zobject  Text__setCharacterSize(zobject*, int);
+    EXPORT zobject  Text__setFont(zobject*, int);
+    EXPORT zobject  Text__setFillColor(zobject*, int);
+    EXPORT zobject  Text__del(zobject*, int);
   
     //FloatRect Methods
-    EXPORT ZObject FloatRect__intersects(ZObject*, int);
+    EXPORT zobject FloatRect__intersects(zobject*, int);
 }
 #endif
